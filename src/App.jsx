@@ -1,16 +1,15 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import Navbar from "./components/Navbar";
 import BackgroundStars from "./components/BackgroundStars";
+import Hero from "./components/Hero";
+import Description from "./components/Description";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="relative">
+    <div className="relative flex flex-col justify-center items-center">
       <BackgroundStars />
       <Navbar />
+      <Hero />
+      <Description />
     </div>
   );
 }
