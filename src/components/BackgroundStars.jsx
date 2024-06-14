@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import BackgroundPattern from "../assets/bg-pattern1.png";
+import BackgroundPattern2 from "../assets/bg-pattern2.png";
 import Star1 from "../assets//stars/star1.png";
 import Star2 from "../assets//stars/star2.png";
 import Star3 from "../assets//stars/star3.png";
@@ -80,6 +81,7 @@ function BackgroundStars() {
   return (
     <div className="absolute top-0 left-0 w-full h-full -z-10">
       <img src={BackgroundPattern} alt="" />
+      <img src={BackgroundPattern2} alt="" />
       <Star top={100} left={700} height={60} width={60} src={Star1} />
       <Star top={171} left={1723} height={43} width={43} src={Star2} />
       <Star top={750} left={1708} height={20} width={20} src={Star3} />

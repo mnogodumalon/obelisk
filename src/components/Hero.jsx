@@ -1,11 +1,12 @@
 import Logo from "../assets/logo.png";
 import ShinyButton from "./ShinyButton";
+import GlowingCrystal from "./GlowingCrystal";
 
 function Hero() {
   return (
-    <div className="hero flex items-start gap-10">
-      <img src={Logo} alt="Obilisk Logo" />
-      <div className="flex gap-16 flex-col items-center mt-24">
+    <div className="hero flex items-start gap-56 mt-20">
+      <GlowingCrystal />
+      <div className="flex gap-16 flex-col items-center">
         <h1 className="text-[64px] font-semibold">Welcome to Obelisk!</h1>
         <div className="flex gap-8">
           <div className=" flex justify-center items-center">
