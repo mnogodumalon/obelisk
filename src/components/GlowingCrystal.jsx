@@ -7,12 +7,12 @@ function GlowingCrystal() {
     animate: {
       scale: [1, 1.02, 1], // Leichte Skalierung für den Glow-Effekt
       filter: [
-        "brightness(1) drop-shadow(0 0 70px rgba(0, 255, 204, 1))",
-        "brightness(1.2) drop-shadow(0 0 120px rgba(0, 255, 204, 1)) saturate(150%)",
-        "brightness(1) drop-shadow(0 0 70px rgba(0, 255, 204, 1))",
+        "brightness(1) drop-shadow(0 0 120px rgba(0, 255, 204, 1)) drop-shadow(0 0 120px rgba(0, 255, 204, 0.7)) saturate(150%)",
+        "brightness(1.2) drop-shadow(0 0 70px rgba(0, 255, 204, 1)) drop-shadow(0 0 70px rgba(0, 255, 204, 0.7))",
+        "brightness(1) drop-shadow(0 0 120px rgba(0, 255, 204, 1)) drop-shadow(0 0 120px rgba(0, 255, 204, 0.7)) saturate(150%)",
       ], // Veränderung der Helligkeit und Schatten für den Leuchteffekt
       transition: {
-        duration: 3,
+        duration: 4,
         ease: "easeInOut",
         repeat: Infinity,
         repeatType: "loop",

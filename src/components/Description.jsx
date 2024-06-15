@@ -1,6 +1,6 @@
 function Description() {
   return (
-    <div className="flex flex-col items-center gap-6 mt-32">
+    <div className="flex flex-col items-center gap-6 mt-64">
       <h2 className="font-medium text-4xl">
         DECENTRALIZATED APP FOR FASTER AND EASILY TRADING
       </h2>

@@ -21,6 +21,7 @@ module.exports = {
         0.5: "0.5px", // Definiere eine benutzerdefinierte Randbreite
       },
       colors: {
+        "blue-number": "#0965D5",
         blackish: "#121212", // Hintergrundfarbe ähnlich wie dein Button-Hintergrund
         "glow-start": "rgba(255, 255, 255, 0.5)", // Reduziere Opazität für Startfarbe des Glühens
         "glow-end": "rgba(255, 255, 255, 0.2)", // Endfarbe des Glühens

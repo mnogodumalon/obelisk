@@ -4,7 +4,7 @@ import GlowingCrystal from "./GlowingCrystal";
 
 function Hero() {
   return (
-    <div className="hero flex items-start gap-56 mt-20">
+    <div className="hero flex items-start gap-64 mt-32">
       <GlowingCrystal />
       <div className="flex gap-16 flex-col items-center">
         <h1 className="text-[64px] font-semibold">Welcome to Obelisk!</h1>
