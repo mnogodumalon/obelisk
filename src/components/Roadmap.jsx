@@ -1,22 +1,82 @@
 import BgNumber from "../assets/bgNumber.png";
+import React from "react";
+import GradientText from "./GradientText";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Roadmap() {
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    triggerOnce: true,
+    threshold: 0.3, // Löst aus, wenn 30% des Containers im Viewport sind
+  });
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, {
+    triggerOnce: true,
+    threshold: 0.3, // Löst aus, wenn 30% des Containers im Viewport sind
+  });
+  const ref3 = useRef(null);
+  const isInView3 = useInView(ref3, {
+    triggerOnce: true,
+    threshold: 0.3, // Löst aus, wenn 30% des Containers im Viewport sind
+  });
+
+  React.useEffect(() => {
+    if (isInView) {
+      controls.start({
+        y: 0,
+        opacity: 1,
+        transition: { delay: 0.5, type: "spring", stiffness: 50 },
+      });
+    }
+  }, [controls, isInView]);
+
+  React.useEffect(() => {
+    if (isInView2) {
+      controls2.start({
+        y: 0,
+        opacity: 1,
+        transition: { delay: 1.5, type: "spring", stiffness: 50 },
+      });
+    }
+  }, [controls2, isInView2]);
+
+  React.useEffect(() => {
+    if (isInView3) {
+      controls3.start({
+        y: 0,
+        opacity: 1,
+        transition: { delay: 2.5, type: "spring", stiffness: 50 },
+      });
+    }
+  }, [controls3, isInView3]);
+
   return (
-    <div className="mt-40 flex flex-col items-center justify-center gap-32">
+    <div
+      id="roadmap"
+      className="pt-40 flex flex-col items-center justify-center gap-32"
+    >
       <div className="flex flex-col items-center gap-3">
         <h2 className="font-medium text-4xl">ROADMAP</h2>
-        <h3 className="font-medium text-base bg-gradient-to-r from-blue-600 to-teal-300 bg-clip-text text-transparent">
-          {">"}what's our plan?
-        </h3>
+        <GradientText text="what's our plan?" />
       </div>
       <div className="flex gap-14 justify-start">
-        <div className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={controls}
+          ref={ref}
+          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
+        >
           <img
             className="absolute -top-1/2"
             src={BgNumber}
             alt="Number Background"
           />
-          <h2 className="absolute -top-[8%] left-1/2 text-5xl text-blue-number">
+          <h2 className="absolute -top-[8%] left-[46%] text-5xl text-blue-number">
             1
           </h2>
           <div className="bg-neutral-950 p-5 rounded-3xl border-r-[1px] border-blue-number/20">
@@ -27,15 +87,20 @@ function Roadmap() {
               wishes of users
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={controls2}
+          ref={ref2}
+          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]"
+        >
           <img
             className="absolute -bottom-1/2"
             src={BgNumber}
             alt="Number Background"
           />
-          <h2 className="absolute -bottom-[8%] left-1/2 text-5xl text-blue-number">
+          <h2 className="absolute -bottom-[8%] left-[46%] text-5xl text-blue-number">
             2
           </h2>
           <div className="bg-neutral-950 py-5 px-[27px] rounded-3xl border-l-[1px] border-blue-number/20">
@@ -44,15 +109,20 @@ function Roadmap() {
               Functional changes, error work
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={controls3}
+          ref={ref3}
+          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
+        >
           <img
             className="absolute -top-1/2"
             src={BgNumber}
             alt="Number Background"
           />
-          <h2 className="absolute -top-[8%] left-1/2 text-5xl text-blue-number">
+          <h2 className="absolute -top-[8%] left-[46%] text-5xl text-blue-number">
             3
           </h2>
           <div className="bg-neutral-950 py-5 px-[68px] rounded-3xl border-r-[1px] border-blue-number/20">
@@ -61,7 +131,7 @@ function Roadmap() {
               Official release of the app
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

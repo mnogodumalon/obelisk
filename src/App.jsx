@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="relative flex flex-col justify-center items-center">
-      <BackgroundStars />
+      <BackgroundStars className="hidden" />
       <Navbar />
       <Hero />
       <Description />

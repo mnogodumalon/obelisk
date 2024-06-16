@@ -3,14 +3,13 @@ import Twitter from "../assets/icons/twitter.png";
 import Discord from "../assets/icons/discord.png";
 import Chat from "../assets/icons/chat.png";
 import Bot from "../assets/icons/bot.png";
+import GradientText from "./GradientText.jsx";
 
 function Socials() {
   return (
-    <div className="mt-44 flex flex-col items-center gap-6">
+    <div id="socials" className="pt-44 flex flex-col items-center gap-6">
       <h1 className="font-medium text-4xl">SOCIAL LINKS</h1>
-      <h3 className="font-medium text-base bg-gradient-to-r from-blue-600 to-teal-300 bg-clip-text text-transparent">
-        {">"}glad to see you in our community!
-      </h3>
+      <GradientText text="glad to see you in our community!" />
       <div className="mt-16 flex gap-20">
         <div className="flex flex-col items-center gap-1">
           <img src={Telegram} alt="Telegram icon" />

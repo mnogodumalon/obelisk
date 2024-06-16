@@ -4,18 +4,18 @@ import Lock from "../assets/icons/Lock.png";
 import System from "../assets/icons/System.png";
 import Arrows from "../assets/icons/arrows.png";
 import ArgumentBg from "../assets/ArgumentBg.png";
+import GradientText from "./GradientText";
+import BackgroundGlow from "./BackgroundGlow";
 
 function Benefits() {
   return (
-    <div className="max-w-5xl mt-12">
+    <div id="benefits" className="max-w-5xl pt-32">
       <div className="flex items-center flex-col gap-6 mt-32">
         <h2 className="font-medium text-4xl">
           DISCOVER ALL THE BENEFITS OF CONVENIENT TRADING
         </h2>
 
-        <h3 className="font-medium text-base bg-gradient-to-r from-blue-600 to-teal-300 bg-clip-text text-transparent">
-          {">"}why us?
-        </h3>
+        <GradientText text="why us?" />
       </div>
       <div className="flex flex-col items-start gap-3 mt-16 relative flex-wrap">
         <div className=" flex flex-col gap-4 justify-center items-center p-10 rounded-lg">
@@ -28,11 +28,7 @@ function Benefits() {
             websites!
           </p>
         </div>
-        <img
-          src={ArgumentBg}
-          className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 -z-10"
-          alt=""
-        />
+        <BackgroundGlow direction={false} />
       </div>
 
       <div className="flex flex-col items-end gap-3 mt-16 relative flex-wrap">
@@ -46,11 +42,7 @@ function Benefits() {
             system
           </p>
         </div>
-        <img
-          src={ArgumentBg}
-          className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 -z-10"
-          alt=""
-        />
+        <BackgroundGlow direction={true} />
       </div>
 
       <div className="flex flex-col items-start gap-3 mt-16 relative flex-wrap">
@@ -64,11 +56,7 @@ function Benefits() {
             orders
           </p>
         </div>
-        <img
-          src={ArgumentBg}
-          className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 -z-10"
-          alt=""
-        />
+        <BackgroundGlow direction={false} />
       </div>
 
       <div className="flex flex-col items-end gap-3 mt-16 relative flex-wrap">
@@ -82,11 +70,7 @@ function Benefits() {
             pairs
           </p>
         </div>
-        <img
-          src={ArgumentBg}
-          className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 -z-10"
-          alt=""
-        />
+        <BackgroundGlow direction={true} />
       </div>
     </div>
   );

@@ -71,3 +71,29 @@ body {
 .border-thin {
   border-width: 0.5px;
 }
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animated-h3 {
+  background-image: linear-gradient(to right, #445ef2, #1af0e9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* background-size: 200%;
+  animation: animatedText 2s linear forwards; */
+}
+
+@keyframes animatedText {
+  from {
+    background-position: 300%;
+  }
+  to {
+    background-position: 70%; /* Endet bei 0%, so dass der volle sichtbare Gradient angezeigt wird */
+  }
+}
