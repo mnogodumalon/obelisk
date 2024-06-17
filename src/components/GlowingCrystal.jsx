@@ -24,7 +24,7 @@ function GlowingCrystal() {
     <motion.img
       src={Crystal}
       alt="Glowing Crystal"
-      className="h-96"
+      className="md:h-96 h64"
       variants={glowVariants}
       animate="animate"
     />
