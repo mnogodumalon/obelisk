@@ -64,7 +64,7 @@ function Roadmap() {
         <h2 className="font-medium text-4xl">ROADMAP</h2>
         <GradientText text="what's our plan?" />
       </div>
-      <div className="flex gap-14 justify-start">
+      <div className="flex flex-col md:flex-row gap-14 justify-start">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={controls}
@@ -96,11 +96,11 @@ function Roadmap() {
           className="relative flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]"
         >
           <img
-            className="absolute -bottom-1/2"
+            className="absolute -top-1/2 md:-bottom-1/2"
             src={BgNumber}
             alt="Number Background"
           />
-          <h2 className="absolute -bottom-[8%] left-[46%] text-5xl text-blue-number">
+          <h2 className="absolute -top-[8%] md:-bottom-[8%] left-[46%] text-5xl text-blue-number">
             2
           </h2>
           <div className="bg-neutral-950 py-5 px-[27px] rounded-3xl border-l-[1px] border-blue-number/20">

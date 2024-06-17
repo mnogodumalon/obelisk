@@ -5,13 +5,13 @@ function Footer() {
   return (
     <div id="footer" className="pt-64">
       <div className=" border-t-[1px] border-gray-500/30 ">
-        <div className="rounded-3xl gap-16 mt-16 border-[1px] p-8 border-gray-500/30 bg-neutral-950/70 flex items-start">
-          <div className="flex flex-col items-start w-[520px]">
+        <div className="rounded-3xl gap-16 mt-16 border-[1px] p-8 border-gray-500/30 bg-neutral-950/70 flex flex-col md:flex-row items-start justify-center">
+          <div className="flex flex-col items-center md:items-start w-[520px]">
             <a
               href="#"
               className="hover:bg-gray-700 px-3 py-2 rounded font-medium	text-xl"
             >
-              <div className="flex items-center">
+              <div className="flex -ml-[6%] items-center">
                 <img
                   className="h-24 w-24 max-w-24 mr-2"
                   src={obeliskIcon}
@@ -20,7 +20,7 @@ function Footer() {
                 <span className="text-nowrap">Obelisk DEX</span>
               </div>
             </a>
-            <p className="text-lg text-gray-600">
+            <p className="text-s text-center md:test-start text-gray-600">
               Obelisk DEX is a decentralizated app with fast transaction
               processing, diverse markets, safety blockchain, in simply and
               user-friendly design. Just trade and take profit!
