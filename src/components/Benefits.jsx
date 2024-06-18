@@ -12,7 +12,7 @@ function Benefits() {
   return (
     <div id="benefits" className="max-w-5xl md:pt-32 pt-16">
       <div className="flex items-center flex-col md:gap-6 gap-3 mt-32">
-        <h2 className="font-medium text-lg w-[320px] md:w-max text-center md:text-4xl">
+        <h2 className="font-medium text-xl w-[320px] md:w-max text-center md:text-4xl">
           DISCOVER ALL THE BENEFITS OF CONVENIENT TRADING
         </h2>
 

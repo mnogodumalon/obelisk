@@ -58,7 +58,7 @@ function Roadmap() {
   return (
     <div
       id="roadmap"
-      className="md:pt-40 pt-24 flex flex-col items-center justify-center gap-32"
+      className="md:pt-40 pt-24 flex flex-col items-center justify-center md:gap-32 gap-16"
     >
       <div className="flex flex-col items-center gap-3">
         <h2 className="font-medium md:text-4xl text-xl">ROADMAP</h2>
@@ -89,7 +89,7 @@ function Roadmap() {
           </div>
         </motion.div>
 
-        <div className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
+        <div className="md:hidden relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
           <img
             className="absolute -top-1/2"
             src={BgNumber}
@@ -112,7 +112,7 @@ function Roadmap() {
           initial={{ y: 100, opacity: 0 }}
           animate={controls2}
           ref={ref2}
-          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]"
+          className="hidden relative md:flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]"
         >
           <img
             className="absolute -top-1/2 md:-bottom-1/2"
@@ -130,11 +130,28 @@ function Roadmap() {
           </div>
         </motion.div>
 
+        <div className="md:hidden relative flex justify-center rounded-3xl p-px bg-gradient-to-l from-blue-number/50 to-transparent w-[328px] h-[294px]">
+          <img
+            className="absolute -top-1/2 md:-bottom-1/2"
+            src={BgNumber}
+            alt="Number Background"
+          />
+          <h2 className="absolute -top-[8%] md:-bottom-[8%] left-[46%] text-5xl text-blue-number">
+            2
+          </h2>
+          <div className="bg-neutral-950 py-5 px-[63px] rounded-3xl border-l-[1px] border-blue-number/20">
+            <h2 className="mt-20 text-xl text-center">Analyzing feedback</h2>
+            <p className="mt-6 text-gray-600 text-sm text-center">
+              Functional changes, error work
+            </p>
+          </div>
+        </div>
+
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={controls3}
           ref={ref3}
-          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
+          className="hidden relative md:flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
         >
           <img
             className="absolute -top-1/2"
@@ -151,6 +168,23 @@ function Roadmap() {
             </p>
           </div>
         </motion.div>
+
+        <div className="md:hidden relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
+          <img
+            className="absolute -top-1/2"
+            src={BgNumber}
+            alt="Number Background"
+          />
+          <h2 className="absolute -top-[8%] left-[46%] text-5xl text-blue-number">
+            3
+          </h2>
+          <div className="bg-neutral-950 py-5 px-[80px] rounded-3xl border-r-[1px] border-blue-number/20">
+            <h2 className="mt-20 text-xl text-center">Mainnet</h2>
+            <p className="mt-6 text-gray-600 text-sm text-center">
+              Official release of the app
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ function Description() {
       id="description"
       className="flex flex-col items-center md:gap-6 gap-3 md:pt-64 pt-32"
     >
-      <h2 className="font-medium text-lg w-[320px] md:w-max text-center md:text-4xl">
+      <h2 className="font-medium text-xl w-[350px] md:w-max text-center md:text-4xl">
         DECENTRALIZATED APP FOR FASTER AND EASILY TRADING
       </h2>
       <GradientText text="what is Obelisk?" />
