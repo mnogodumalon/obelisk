@@ -12,7 +12,7 @@ function Hero() {
       <h1 className="md:hidden text-center text-2xl font-semibold">
         Welcome to Obelisk!
       </h1>
-      <div className="hidden md:block">
+      <div>
         <GlowingCrystal />
       </div>
       <div className="flex gap-16 flex-col items-center">
