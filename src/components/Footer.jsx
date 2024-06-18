@@ -3,7 +3,7 @@ import Ton from "../assets/icons/ton.png";
 import ShinyButton from "./ShinyButton";
 function Footer() {
   return (
-    <div id="footer" className="md:pt-64 pt-24">
+    <div id="footer" className="md:pt-64 pt-24 mb-6 md:mb-0">
       <div className=" border-t-[1px] border-gray-500/30 ">
         <div className="rounded-3xl md:gap-16 gap-8 md:mt-16 mt-8 border-[1px] p-8 border-gray-500/30 bg-neutral-950/70 flex flex-col md:flex-row items-center md:items-start justify-center">
           <div className="flex flex-col items-center md:items-start md:w-[520px]">

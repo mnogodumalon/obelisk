@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import BackgroundPattern from "../assets/bg-pattern1.png";
 import BackgroundPattern2 from "../assets/bg-pattern2.png";
 import BackgroundPatternMobile1 from "../assets/bg-pattern-mobile1.png";
+import BackgroundPatternMobile2 from "../assets/bg-pattern-mobile2.png";
 import Star1 from "../assets//stars/star1.png";
 import Star2 from "../assets//stars/star2.png";
 import Star3 from "../assets//stars/star3.png";
@@ -120,6 +121,21 @@ function BackgroundStars() {
           alt=""
           className="relative top-[0.5%] -left-[60%] max-w-[230%] h-auto"
         />
+        <img
+          src={BackgroundPatternMobile2}
+          alt=""
+          className="relative top-[30%] -left-[60%] max-w-[300%] h-auto"
+        />
+        <Star top={0.2} left={81} height={40} width={40} src={Star1} />
+        <Star top={11} left={9} height={50} width={50} src={Star4} />
+        <Star top={20.5} left={85} height={30} width={30} src={Star11} />
+        <Star top={24} left={5} height={60} width={60} src={Star10} />
+        <Star top={34} left={87} height={35} width={35} src={Star6} />
+        <Star top={49} left={90} height={45} width={45} src={Star9} />
+        <Star top={63} left={2} height={40} width={40} src={Star6} />
+        <Star top={70} left={87} height={40} width={40} src={Star9} />
+        <Star top={80} left={9} height={60} width={60} src={Star17} />
+        <Star top={87} left={75} height={35} width={35} src={Star14} />
       </div>
     </div>
   );
