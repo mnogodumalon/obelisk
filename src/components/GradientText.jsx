@@ -18,7 +18,7 @@ function GradientText(props) {
 
   return (
     <motion.h3
-      className="font-medium text-base animated-h3"
+      className="font-medium md:text-base text-sm animated-h3"
       ref={ref}
       initial={{ backgroundPosition: "300%" }}
       animate={controls}

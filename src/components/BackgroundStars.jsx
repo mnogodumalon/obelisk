@@ -114,7 +114,7 @@ function BackgroundStars() {
         <Star top={81} left={25} height={50} width={50} src={Star16} />
         <Star top={95.5} left={11.5} height={90} width={90} src={Star17} />
       </div>
-      <div className="md:hidden absolute top-0 left-0 w-full h-full -z-10">
+      <div className="md:hidden absolute top-0 left-0 w-full h-full -z-10 overflow-clip">
         <img
           src={BackgroundPatternMobile1}
           alt=""
