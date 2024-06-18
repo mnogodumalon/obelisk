@@ -44,7 +44,7 @@ function GlowingCrystal() {
       className="md:h-96 h-64"
       variants={glowVariants}
       initial={isDesktop ? "animate" : "static"}
-      animate="animate"
+      animate={controls}
     />
   );
 }
