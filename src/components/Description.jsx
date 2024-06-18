@@ -10,7 +10,7 @@ function Description() {
         DECENTRALIZATED APP FOR FASTER AND EASILY TRADING
       </h2>
       <GradientText text="what is Obelisk?" />
-      <p className="text-gray-600 md:w-[600px] text-center text-sm md:text-lg">
+      <p className="text-gray-600 md:w-[600px] mt-10 md:mt-0 text-center text-sm md:text-lg">
         Obelisk DEX is a decentralizated app with fast transaction processing,
         diverse markets, safety blockchain, in simply and user-friendly design.
         Just trade and take profit!

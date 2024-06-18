@@ -58,10 +58,10 @@ function Roadmap() {
   return (
     <div
       id="roadmap"
-      className="pt-40 flex flex-col items-center justify-center gap-32"
+      className="md:pt-40 pt-24 flex flex-col items-center justify-center gap-32"
     >
       <div className="flex flex-col items-center gap-3">
-        <h2 className="font-medium text-4xl">ROADMAP</h2>
+        <h2 className="font-medium md:text-4xl text-xl">ROADMAP</h2>
         <GradientText text="what's our plan?" />
       </div>
       <div className="flex flex-col md:flex-row gap-14 justify-start">
@@ -69,7 +69,7 @@ function Roadmap() {
           initial={{ y: 100, opacity: 0 }}
           animate={controls}
           ref={ref}
-          className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
+          className="hidden relative md:flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]"
         >
           <img
             className="absolute -top-1/2"
@@ -88,6 +88,25 @@ function Roadmap() {
             </p>
           </div>
         </motion.div>
+
+        <div className="relative flex justify-center rounded-3xl p-px bg-gradient-to-r from-blue-number/50 to-transparent w-[328px] h-[294px]">
+          <img
+            className="absolute -top-1/2"
+            src={BgNumber}
+            alt="Number Background"
+          />
+          <h2 className="absolute -top-[8%] left-[46%] text-5xl text-blue-number">
+            1
+          </h2>
+          <div className="bg-neutral-950 p-5 rounded-3xl border-r-[1px] border-blue-number/20">
+            <h2 className="mt-20 text-xl text-center">Beta test</h2>
+            <p className="mt-6 text-gray-600 text-sm text-center">
+              Beta release of the app for early users. We want to collect
+              information about all bugs and implement the most beneficial
+              wishes of users
+            </p>
+          </div>
+        </div>
 
         <motion.div
           initial={{ y: 100, opacity: 0 }}
