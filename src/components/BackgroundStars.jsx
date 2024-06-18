@@ -115,7 +115,11 @@ function BackgroundStars() {
         <Star top={95.5} left={11.5} height={90} width={90} src={Star17} />
       </div>
       <div className="md:hidden absolute top-0 left-0 w-full h-full -z-10">
-        <img src={BackgroundPatternMobile1} alt="" />
+        <img
+          src={BackgroundPatternMobile1}
+          alt=""
+          className="relative top-[0.5%] -left-[60%] max-w-[230%] h-auto"
+        />
       </div>
     </div>
   );
