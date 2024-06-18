@@ -32,7 +32,7 @@ function GlowingCrystal() {
       <img
         src={Crystal}
         alt="Glowing Crystal"
-        className="md:hidden h-64"
+        className="md:hidden h-64 overflow-visible"
         style={{
           filter:
             "drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 1))",
