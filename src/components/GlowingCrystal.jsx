@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Crystal from "../assets/obelisk.png"; // Pfad zu Ihrem Kristallbild
+import Crystal from "../assets/obelisk.png";
+import obeliskBG from "../assets/obelisk-bg.png";
 
 function GlowingCrystal() {
   // Animationsvarianten für das Leuchten
@@ -21,7 +22,7 @@ function GlowingCrystal() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <motion.img
         src={Crystal}
         alt="Glowing Crystal"
@@ -29,16 +30,23 @@ function GlowingCrystal() {
         variants={glowVariants}
         animate="animate"
       />
-      <img
-        src={Crystal}
-        alt="Glowing Crystal"
-        className="md:hidden h-64 overflow-visible"
-        style={{
-          filter:
-            "drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 1))",
-          transform: "translateZ(0)",
-        }}
-      />
+      <div className="flex items-center justify-center relative w-96">
+        <img
+          src={Crystal}
+          alt="Glowing Crystal"
+          className="md:hidden h-64 overflow-visible crystal-bg"
+          // style={{
+          //   filter:
+          //     "drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 1))",
+          //   transform: "translateZ(0)",
+          // }}
+        />
+        <img
+          src={obeliskBG}
+          alt="Crystal Background"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96"
+        />
+      </div>
     </div>
   );
 }

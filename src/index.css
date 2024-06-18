@@ -97,3 +97,9 @@ html {
     background-position: 70%; /* Endet bei 0%, so dass der volle sichtbare Gradient angezeigt wird */
   }
 }
+
+.crystal-bg {
+  background-image: url("../assets/bg-crystal.svg");
+  background-size: cover;
+  background-position: center;
+}
