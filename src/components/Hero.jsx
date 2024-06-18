@@ -7,9 +7,9 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="hero flex md:flex-row flex-col items-center gap-8 md:gap-64 pt-32"
+      className="hero flex md:flex-row flex-col items-center gap-20 md:gap-64 pt-32"
     >
-      <h1 className="md:hidden text-center text-2xl font-semibold">
+      <h1 className="md:hidden text-center text-3xl font-semibold">
         Welcome to Obelisk!
       </h1>
       <div>
