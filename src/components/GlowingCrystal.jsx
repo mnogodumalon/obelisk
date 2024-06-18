@@ -31,20 +31,11 @@ function GlowingCrystal() {
         animate="animate"
       />
       <div className="flex items-center justify-center relative w-96">
-        <img
-          src={Crystal}
-          alt="Glowing Crystal"
-          className="md:hidden h-64 overflow-visible crystal-bg"
-          // style={{
-          //   filter:
-          //     "drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 1))",
-          //   transform: "translateZ(0)",
-          // }}
-        />
+        <img src={Crystal} alt="Glowing Crystal" className="md:hidden h-64" />
         <img
           src={obeliskBG}
           alt="Crystal Background"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96"
+          className="md:hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96"
         />
       </div>
     </div>
