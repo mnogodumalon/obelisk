@@ -9,7 +9,7 @@ function Socials() {
   return (
     <div
       id="socials"
-      className="pt-44 flex flex-col items-center md:gap-6 gap-3"
+      className="md:pt-44 pt-24 flex flex-col items-center md:gap-6 gap-3"
     >
       <h1 className="font-medium md:text-4xl text-xl">SOCIAL LINKS</h1>
       <GradientText text="glad to see you in our community!" />

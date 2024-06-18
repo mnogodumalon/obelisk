@@ -10,8 +10,8 @@ import ArgumentBGMobile from "../assets/ArgumentBgMobile.png";
 
 function Benefits() {
   return (
-    <div id="benefits" className="max-w-5xl md:pt-32 pt-16">
-      <div className="flex items-center flex-col md:gap-6 gap-3 mt-32">
+    <div id="benefits" className="max-w-5xl md:pt-32 pt-10">
+      <div className="flex items-center flex-col md:gap-6 gap-3 md:mt-32 mt-24">
         <h2 className="font-medium text-xl w-[320px] md:w-max text-center md:text-4xl">
           DISCOVER ALL THE BENEFITS OF CONVENIENT TRADING
         </h2>
