@@ -33,10 +33,10 @@ function GlowingCrystal() {
         src={Crystal}
         alt="Glowing Crystal"
         className="md:hidden h-64"
-        style={{
-          filter:
-            "brightness(1) drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 0.7)) saturate(150%)",
-        }}
+        // style={{
+        //   filter:
+        //     "brightness(1) drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 0.7)) saturate(150%)",
+        // }}
       />
     </div>
   );
