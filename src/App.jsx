@@ -7,6 +7,7 @@ import Roadmap from "./components/Roadmap";
 import Partnerships from "./components/Partnerships";
 import Socials from "./components/Socials";
 import Footer from "./components/Footer";
+import BackgroundBottom from "./components/BackgroundBottom";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Socials />
         <Footer />
       </div>
+      <BackgroundBottom />
     </div>
   );
 }

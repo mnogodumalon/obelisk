@@ -96,7 +96,7 @@ function BackgroundStars() {
     <div>
       <div className="hidden md:block absolute top-0 left-0 w-full h-full -z-10">
         <img src={BackgroundPattern} alt="" />
-        <img className="relative -top-[22%]" src={BackgroundPattern2} alt="" />
+        {/* <img className="relative -top-[22%]" src={BackgroundPattern2} alt="" /> */}
         <Star top={2.2} left={41} height={60} width={60} src={Star1} />
         <Star top={5} left={82} height={43} width={43} src={Star2} />
         <Star top={15} left={78} height={20} width={20} src={Star3} />
