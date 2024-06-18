@@ -12,14 +12,16 @@ function App() {
   return (
     <div className="relative flex flex-col justify-center items-center">
       <BackgroundStars className="hidden" />
-      <Navbar />
-      <Hero />
-      <Description />
-      <Benefits />
-      <Roadmap />
-      <Partnerships />
-      <Socials />
-      <Footer />
+      <div className="w-[80%] md:w-full flex flex-col justify-center items-center">
+        <Navbar />
+        <Hero />
+        <Description />
+        <Benefits />
+        <Roadmap />
+        <Partnerships />
+        <Socials />
+        <Footer />
+      </div>
     </div>
   );
 }

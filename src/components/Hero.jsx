@@ -9,10 +9,10 @@ function Hero() {
       id="hero"
       className="hero flex md:flex-row flex-col items-center gap-8 md:gap-64 pt-32"
     >
-      <h1 className="md:hidden text-center text-4xl font-semibold">
+      <h1 className="md:hidden text-center text-2xl font-semibold">
         Welcome to Obelisk!
       </h1>
-      <div className="">
+      <div className="hidden md:block">
         <GlowingCrystal />
       </div>
       <div className="flex gap-16 flex-col items-center">

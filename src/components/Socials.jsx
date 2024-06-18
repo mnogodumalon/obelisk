@@ -10,7 +10,7 @@ function Socials() {
     <div id="socials" className="pt-44 flex flex-col items-center gap-6">
       <h1 className="font-medium text-4xl">SOCIAL LINKS</h1>
       <GradientText text="glad to see you in our community!" />
-      <div className="mt-16 flex gap-20">
+      <div className="mt-16 flex flex-col md:flex-row gap-12 md:gap-20">
         <div className="flex flex-col items-center gap-1">
           <img src={Telegram} alt="Telegram icon" />
           <p className="text-base text-gray-600">Channel</p>
