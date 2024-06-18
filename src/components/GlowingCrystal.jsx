@@ -36,6 +36,7 @@ function GlowingCrystal() {
         style={{
           filter:
             "drop-shadow(0 0 120px rgba(0, 255, 255, 1)) drop-shadow(0 0 120px rgba(0, 255, 255, 1))",
+          transform: "translateZ(0)",
         }}
       />
     </div>
