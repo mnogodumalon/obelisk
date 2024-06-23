@@ -2,22 +2,27 @@ import Logo from "../assets/logo.png";
 import ShinyButton from "./ShinyButton";
 import GlowingCrystal from "./GlowingCrystal";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import iStar from "../assets/istar.svg";
 
 function Hero() {
   return (
     <div
-      id="hero"
-      className="hero flex md:flex-row flex-col items-center gap-20 md:gap-20 md:pt-32 pt-14"
+      id="obelisk"
+      className="hero flex md:flex-row flex-col items-center gap-20 md:gap-0 md:pt-32 pt-14"
     >
       <h1 className="md:hidden text-center text-3xl font-bold">
-        Welcome to Obelisk!
+        Welcome to Obel<span className="custom-i-mobile">ı</span>sk!
       </h1>
       <div>
         <GlowingCrystal />
       </div>
       <div className="flex gap-16 flex-col items-center">
         <h1 className="hidden md:block text-[64px] font-semibold">
-          Welcome to Obelisk!
+          Welcome to Obel
+          <span className="custom-i">ı</span>
+          sk!
         </h1>
         <div className="flex md:flex-row flex-col gap-8">
           <motion.button

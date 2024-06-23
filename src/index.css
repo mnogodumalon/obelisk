@@ -103,3 +103,40 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.custom-i {
+  position: relative;
+  display: inline-block;
+}
+.custom-i-mobile {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-i::after {
+  content: "";
+  background-image: url("./assets/istar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.35em; /* Anpassen, um das Bild korrekt zu positionieren */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0.2em; /* Anpassen, um die Größe des Bildes zu ändern */
+  height: 0.2em; /* Anpassen, um die Größe des Bildes zu ändern */
+}
+
+.custom-i-mobile::after {
+  content: "";
+  background-image: url("./assets/istar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.2em; /* Anpassen, um das Bild korrekt zu positionieren */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0.15em; /* Anpassen, um die Größe des Bildes zu ändern */
+  height: 0.15em; /* Anpassen, um die Größe des Bildes zu ändern */
+}

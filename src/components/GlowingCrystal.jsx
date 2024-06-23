@@ -22,7 +22,7 @@ function GlowingCrystal() {
   };
 
   return (
-    <div className="w-full">
+    <div className="">
       <motion.img
         src={Crystal}
         alt="Glowing Crystal"
