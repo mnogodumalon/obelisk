@@ -36,7 +36,7 @@ function Navbar() {
               { name: "ROADMAP", href: "#roadmap" },
               { name: "PARTNERSHIPS", href: "#partnerships" },
               { name: "SOCIALS", href: "#socials" },
-              { name: "DOCS", href: "#footer" },
+              { name: "DOCS", href: "#docs" },
             ].map((link) => (
               <motion.a
                 key={link.name}

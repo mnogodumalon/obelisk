@@ -17,7 +17,7 @@ function NavMobile() {
     { name: "ROADMAP", href: "#roadmap" },
     { name: "PARTNERSHIPS", href: "#partnerships" },
     { name: "SOCIALS", href: "#socials" },
-    { name: "DOCS", href: "#footer" },
+    { name: "DOCS", href: "#docs" },
   ];
 
   const hoverVariants = {
