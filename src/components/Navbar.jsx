@@ -18,7 +18,7 @@ function Navbar() {
             <motion.a
               className="px-3 py-2 rounded font-medium text-xl bg-transparent border-none outline-none focus:outline-none"
               style={{ cursor: "pointer" }}
-              variants={hoverVariants}
+              // variants={hoverVariants}
               whileHover="hover"
               href="#hero"
             >
